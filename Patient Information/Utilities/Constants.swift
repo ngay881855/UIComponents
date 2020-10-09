@@ -1,6 +1,6 @@
 //
 //  Constants.swift
-//  UI Component
+//  Patient Information
 //
 //  Created by Ngay Vong on 10/9/20.
 //

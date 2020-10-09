@@ -14,11 +14,10 @@
 		FF2A2E84251C373F008E002A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF2A2E83251C373F008E002A /* Assets.xcassets */; };
 		FF2A2E87251C373F008E002A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF2A2E85251C373F008E002A /* LaunchScreen.storyboard */; };
 		FFA0D20F2530D89A00BA1939 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA0D20E2530D89A00BA1939 /* Constants.swift */; };
-		FFEE15FF252FD41A002D650D /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEE15FE252FD41A002D650D /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FF2A2E77251C373F008E002A /* UI Component.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UI Component.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF2A2E77251C373F008E002A /* Patient Information.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Patient Information.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF2A2E7A251C373F008E002A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF2A2E7C251C373F008E002A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FF2A2E7E251C373F008E002A /* PatientInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientInformationViewController.swift; sourceTree = "<group>"; };
@@ -27,7 +26,6 @@
 		FF2A2E86251C373F008E002A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF2A2E88251C373F008E002A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFA0D20E2530D89A00BA1939 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		FFEE15FE252FD41A002D650D /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +42,7 @@
 		FF2A2E6E251C373F008E002A = {
 			isa = PBXGroup;
 			children = (
-				FF2A2E79251C373F008E002A /* UI Component */,
+				FF2A2E79251C373F008E002A /* Patient Information */,
 				FF2A2E78251C373F008E002A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,12 +50,12 @@
 		FF2A2E78251C373F008E002A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FF2A2E77251C373F008E002A /* UI Component.app */,
+				FF2A2E77251C373F008E002A /* Patient Information.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FF2A2E79251C373F008E002A /* UI Component */ = {
+		FF2A2E79251C373F008E002A /* Patient Information */ = {
 			isa = PBXGroup;
 			children = (
 				FFA0D20D2530D87600BA1939 /* Utilities */,
@@ -66,7 +64,7 @@
 				FF2AC8FD2522532700FF7D47 /* Storyboards */,
 				FF2A2E83251C373F008E002A /* Assets.xcassets */,
 			);
-			path = "UI Component";
+			path = "Patient Information";
 			sourceTree = "<group>";
 		};
 		FF2AC8FD2522532700FF7D47 /* Storyboards */ = {
@@ -83,7 +81,6 @@
 			children = (
 				FF2AC9002522537200FF7D47 /* State Search */,
 				FF2AC8FF2522534700FF7D47 /* Patient Information */,
-				FFEE15FE252FD41A002D650D /* TableViewController.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -148,9 +145,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FF2A2E76251C373F008E002A /* UI Component */ = {
+		FF2A2E76251C373F008E002A /* Patient Information */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FF2A2E8B251C373F008E002A /* Build configuration list for PBXNativeTarget "UI Component" */;
+			buildConfigurationList = FF2A2E8B251C373F008E002A /* Build configuration list for PBXNativeTarget "Patient Information" */;
 			buildPhases = (
 				FF2A2E73251C373F008E002A /* Sources */,
 				FF2A2E74251C373F008E002A /* Frameworks */,
@@ -161,9 +158,9 @@
 			);
 			dependencies = (
 			);
-			name = "UI Component";
+			name = "Patient Information";
 			productName = "UI Component";
-			productReference = FF2A2E77251C373F008E002A /* UI Component.app */;
+			productReference = FF2A2E77251C373F008E002A /* Patient Information.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -180,7 +177,7 @@
 					};
 				};
 			};
-			buildConfigurationList = FF2A2E72251C373F008E002A /* Build configuration list for PBXProject "UI Component" */;
+			buildConfigurationList = FF2A2E72251C373F008E002A /* Build configuration list for PBXProject "Patient Information" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -193,7 +190,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FF2A2E76251C373F008E002A /* UI Component */,
+				FF2A2E76251C373F008E002A /* Patient Information */,
 			);
 		};
 /* End PBXProject section */
@@ -240,7 +237,6 @@
 				FF2A2E7F251C373F008E002A /* PatientInformationViewController.swift in Sources */,
 				FF2A2E7B251C373F008E002A /* AppDelegate.swift in Sources */,
 				FF2A2E7D251C373F008E002A /* SceneDelegate.swift in Sources */,
-				FFEE15FF252FD41A002D650D /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,7 +385,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FFM24X5V87;
-				INFOPLIST_FILE = "UI Component/Support Files/Info.plist";
+				INFOPLIST_FILE = "Patient Information/Support Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -409,7 +405,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FFM24X5V87;
-				INFOPLIST_FILE = "UI Component/Support Files/Info.plist";
+				INFOPLIST_FILE = "Patient Information/Support Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -425,7 +421,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FF2A2E72251C373F008E002A /* Build configuration list for PBXProject "UI Component" */ = {
+		FF2A2E72251C373F008E002A /* Build configuration list for PBXProject "Patient Information" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FF2A2E89251C373F008E002A /* Debug */,
@@ -434,7 +430,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FF2A2E8B251C373F008E002A /* Build configuration list for PBXNativeTarget "UI Component" */ = {
+		FF2A2E8B251C373F008E002A /* Build configuration list for PBXNativeTarget "Patient Information" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FF2A2E8C251C373F008E002A /* Debug */,

@@ -1,6 +1,6 @@
 //
 //  PatientInformationViewController.swift
-//  UI Component
+//  Patient Information
 //
 //  Created by Ngay Vong on 9/23/20.
 //
