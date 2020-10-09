@@ -82,14 +82,20 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <slider opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="100" minValue="80" maxValue="200" translatesAutoresizingMaskIntoConstraints="NO" id="SWI-MA-ryd">
+                                                    <slider opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="100" minValue="80" maxValue="300" translatesAutoresizingMaskIntoConstraints="NO" id="SWI-MA-ryd">
                                                         <rect key="frame" x="141.5" y="125" width="184" height="31"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="180" id="XTn-bx-X13"/>
+                                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="180" id="XTn-bx-X13"/>
                                                         </constraints>
+                                                        <connections>
+                                                            <action selector="weightSliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Tmb-H6-FP7"/>
+                                                        </connections>
                                                     </slider>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lbs" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fFh-43-XOC">
                                                         <rect key="frame" x="333.5" y="129.5" width="60.5" height="21"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60.5" id="bRt-ff-pAb"/>
+                                                        </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -152,13 +158,13 @@
                                                         <constraints>
                                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="500" id="kPn-Bq-oZ6"/>
                                                         </constraints>
-                                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                         <color key="textColor" systemColor="labelColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     </textView>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <gestureRecognizers/>
                                                 <constraints>
                                                     <constraint firstAttribute="trailing" secondItem="gEM-si-KhB" secondAttribute="trailing" constant="20" id="0U3-qZ-PXs"/>
                                                     <constraint firstItem="LFL-Fa-tT8" firstAttribute="width" secondItem="9D0-T0-7Ph" secondAttribute="width" multiplier="1:4" id="16x-E7-3rt"/>
@@ -216,6 +222,9 @@
                                                     <constraint firstItem="c2U-9Q-Tuh" firstAttribute="leading" secondItem="9D0-T0-7Ph" secondAttribute="leading" constant="20" id="wzD-a0-yU0"/>
                                                     <constraint firstItem="Vml-xv-p6O" firstAttribute="leading" secondItem="9D0-T0-7Ph" secondAttribute="leading" constant="20" id="zNw-LZ-sdx"/>
                                                 </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="RtX-q9-wid" appends="YES" id="6WE-Ud-MXb"/>
+                                                </connections>
                                             </view>
                                         </subviews>
                                         <constraints>
@@ -250,12 +259,24 @@
                     </view>
                     <navigationItem key="navigationItem" id="MMA-R9-1K6"/>
                     <connections>
+                        <outlet property="dateOfBirthTextField" destination="qAV-Dt-6dh" id="8Tn-q5-BrV"/>
                         <outlet property="genderSegmentedControl" destination="Bkr-vY-uAg" id="Bwg-jp-hOE"/>
+                        <outlet property="heightTextField" destination="nl9-D2-R57" id="eEe-PV-D0a"/>
                         <outlet property="nameTextField" destination="HzJ-XH-wmy" id="dmW-on-RqW"/>
+                        <outlet property="stateTextField" destination="SL9-OL-IFZ" id="eSK-48-d2r"/>
+                        <outlet property="streetAddressTextField" destination="EGE-MS-pxx" id="GIv-Fi-WPc"/>
+                        <outlet property="symptomTextView" destination="gEM-si-KhB" id="0Sf-gW-V36"/>
                         <outlet property="weightLabel" destination="fFh-43-XOC" id="81o-UN-ulm"/>
+                        <outlet property="weightSlider" destination="SWI-MA-ryd" id="suP-3g-knH"/>
+                        <outlet property="zipcodeTextField" destination="HCe-l5-Lri" id="Tut-XP-Ndf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="RtX-q9-wid">
+                    <connections>
+                        <action selector="tapGestureTapped:" destination="BYZ-38-t0r" id="jTE-aU-FPc"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-678" y="15"/>
         </scene>
