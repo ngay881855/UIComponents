@@ -13,6 +13,8 @@
 		FF2A2E82251C373F008E002A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF2A2E80251C373F008E002A /* Main.storyboard */; };
 		FF2A2E84251C373F008E002A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF2A2E83251C373F008E002A /* Assets.xcassets */; };
 		FF2A2E87251C373F008E002A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF2A2E85251C373F008E002A /* LaunchScreen.storyboard */; };
+		FF3571012530F10800428DE6 /* StateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3571002530F10800428DE6 /* StateTableViewCell.swift */; };
+		FF3571052530F13B00428DE6 /* SearchStateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3571042530F13B00428DE6 /* SearchStateViewController.swift */; };
 		FFA0D20F2530D89A00BA1939 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA0D20E2530D89A00BA1939 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +27,8 @@
 		FF2A2E83251C373F008E002A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF2A2E86251C373F008E002A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF2A2E88251C373F008E002A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF3571002530F10800428DE6 /* StateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateTableViewCell.swift; sourceTree = "<group>"; };
+		FF3571042530F13B00428DE6 /* SearchStateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchStateViewController.swift; sourceTree = "<group>"; };
 		FFA0D20E2530D89A00BA1939 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,6 +102,8 @@
 		FF2AC9002522537200FF7D47 /* State Search */ = {
 			isa = PBXGroup;
 			children = (
+				FF3570FB2530F0CC00428DE6 /* View */,
+				FF3570FA2530F0C300428DE6 /* Controller */,
 			);
 			path = "State Search";
 			sourceTree = "<group>";
@@ -132,6 +138,22 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		FF3570FA2530F0C300428DE6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FF3571042530F13B00428DE6 /* SearchStateViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FF3570FB2530F0CC00428DE6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FF3571002530F10800428DE6 /* StateTableViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		FFA0D20D2530D87600BA1939 /* Utilities */ = {
@@ -234,6 +256,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFA0D20F2530D89A00BA1939 /* Constants.swift in Sources */,
+				FF3571012530F10800428DE6 /* StateTableViewCell.swift in Sources */,
+				FF3571052530F13B00428DE6 /* SearchStateViewController.swift in Sources */,
 				FF2A2E7F251C373F008E002A /* PatientInformationViewController.swift in Sources */,
 				FF2A2E7B251C373F008E002A /* AppDelegate.swift in Sources */,
 				FF2A2E7D251C373F008E002A /* SceneDelegate.swift in Sources */,

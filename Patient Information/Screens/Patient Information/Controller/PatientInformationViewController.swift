@@ -18,7 +18,7 @@ class PatientInformationViewController: UIViewController {
     @IBOutlet private weak var dateOfBirthTextField: UITextField!
     @IBOutlet private weak var streetAddressTextField: UITextField!
     @IBOutlet private weak var zipcodeTextField: UITextField!
-    @IBOutlet private weak var stateTextField: UITextField!
+    @IBOutlet private weak var stateButton: UIButton!
     @IBOutlet private weak var symptomTextView: UITextView!
     
     // MARK: - Private properties
@@ -34,10 +34,22 @@ class PatientInformationViewController: UIViewController {
 
         setupUI()
     }
+    
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let searchStateViewController = segue.destination as? SearchStateViewController {
+            searchStateViewController.delegate = self
+        }
+    }
 
     // MARK: - UISetup
     private func setupUI() {
         self.title = "Patient Information Form"
+        
+        // stateButton
+        self.stateButton.layer.borderColor = UIColor.lightGray.cgColor
+        self.stateButton.layer.borderWidth = 0.5
+        self.stateButton.layer.cornerRadius = 3
         
         // heightTextField
         self.heightTextField.inputView = self.heightPicker
@@ -67,6 +79,10 @@ class PatientInformationViewController: UIViewController {
     }
     
     // MARK: - IBActions
+    @IBAction func stateButtonTouchUpInside(_ sender: Any) {
+        performSegue(withIdentifier: "SearchStateViewController", sender: nil)
+    }
+    
     @IBAction private func weightSliderValueChanged(_ sender: Any) {
         let weight: Int = Int(self.weightSlider.value)
         self.weightLabel.text = "\(weight) lbs"
@@ -115,4 +131,14 @@ extension PatientInformationViewController: UIPickerViewDelegate {
             self.heightTextField.text = feet + "ft " + inches + "in"
         }
     }
+}
+
+extension PatientInformationViewController: PassDataDelegate {
+    func updateData(with data: Any) {
+        if let state = data as? String {
+            self.stateButton.setTitle(state, for: .normal)
+            self.stateButton.setTitleColor(.black, for: .normal)
+        }
+    }
+    
 }
