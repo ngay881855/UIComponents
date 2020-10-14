@@ -1,2 +1,10 @@
-# UIComponents
-An iOS app demonstrate how to use different components to increase the convenience of the user
+# Patient Information
+A small app demonstrate using of UIKit components
+
+## UIComponents
+- UIScrollView
+- UIDatePicker
+
+## Utilizes
+
+## Images
